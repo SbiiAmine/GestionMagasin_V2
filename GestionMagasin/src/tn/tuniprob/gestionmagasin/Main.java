@@ -16,10 +16,16 @@ public class Main {
         magasin.ajoute(yaourt);
         magasin.ajoute(tomate);
 
-
         magasin.affiche();
 
-        System.out.println(" total de produits : " + magasin.getTotalProduits());
+        Magasin magasin2 = new Magasin(1, "charguia 2", 50, null, 0);
+        magasin2.ajoute(lait);
+        magasin2.ajoute(yaourt);
+        magasin2.ajoute(tomate);
+
+        magasin2.affiche();
+
+        System.out.println(" total de produits : " + (magasin.getTotalProduits() + magasin2.getTotalProduits()));
 
 
     }
